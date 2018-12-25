@@ -85,20 +85,21 @@ p
 .main-section
 	position: relative
 	height: 100vh
-	.layout
-		height: 100vh
-		position: absolute
-		top: 0
-		left: 50%
-		padding-top: 30vh
-		z-index: 10
-		pointer-events: none
-		+try(-50%)
-	.title__main
-		display: inline-block
-		margin-bottom: .4em
-		&:after
-			background: linear-gradient(45deg, #05bdee 0%, #7be04d 100%)
+	.video
+		.layout
+			height: 100vh
+			position: absolute
+			top: 0
+			left: 50%
+			padding-top: 30vh
+			z-index: 10
+			pointer-events: none
+			+trx(-50%)
+		.title__main
+			display: inline-block
+			margin-bottom: .4em
+			&:after
+				background: linear-gradient(45deg, #05bdee 0%, #7be04d 100%)
 
 .startscreen
 	position: relative
@@ -531,6 +532,7 @@ p
 		display: block
 	&.is-mobile
 		display: none
+
 .video__video
 	display: block
 	+r(850)
