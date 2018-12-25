@@ -1,0 +1,63 @@
+
++font('Circe-ExtraLight', 'Circe-ExtraLight')
++font('Circe-Bold', 'Circe-Bold')
++font('Circe-ExtraBold', 'Circe-ExtraBold')
++font('Circe-Light', 'Circe-Light')
++font('Circe-Regular', 'Circe-Regular')
++font('Circe-Thin', 'Circe-Thin')
++font('CRC25', 'CRC25')
+
+=crc25
+	font-family: 'CRC25', Arial, sans-serif
+=cr
+	font-family: 'Circe-Thin', Arial, sans-serif
+=cr
+	font-family: 'Circe-Regular', Arial, sans-serif
+=cl
+	font-family: 'Circe-Light', Arial, sans-serif
+=cel
+	font-family: 'Circe-ExtraLight', Arial, sans-serif
+=ceb
+	font-family: 'Circe-ExtraBold', Arial, sans-serif
+=cb
+	font-family: 'Circe-Bold', Arial, sans-serif
+
+
+.title
+	&__main
+		position: relative
+		color: #fff
+		font-size: 136px
+		letter-spacing: -0.025em
+		+tr(.4s)
+		+cb
+		+r(1400)
+			font-size: 8vw
+		+r(800)
+			font-size: 13vw
+		&:after
+			content: ''
+			position: absolute
+			top: 100%
+			left: 0
+			right: 0
+			height: 2px
+
+.desc
+	&__subtitle
+		font-size: 36px
+		color: #fff
+		letter-spacing: -0.025em
+		+cr
+		+r(1400)
+			font-size: 3.6vw
+
+	&_s
+		font-size: 48px
+		line-height: 1.3
+		color: #fff
+		letter-spacing: -.025em
+		+cl
+		+r(1400)
+			font-size: 4vw
+

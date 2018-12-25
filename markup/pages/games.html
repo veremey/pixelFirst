@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en-Us">
+
+	<head>
+		{{> head/head head.defaults}}
+	</head>
+
+	<body class="page">
+
+		<div class="page__wrapper">
+			{{> header/header header.games}}
+
+			<div class="page-game">
+
+				<div class="game">
+					<div class="game__bg">
+						<img src="static/img/content/02.jpg" alt="" class="game__img">
+					</div>
+					<div class="layout layout__big text-center">
+
+						{{> gametitle/gametitle}}
+
+					</div>
+				</div>
+				<div class="centerpic">
+					<img src="static/img/content/centerpic.png" alt="" class="centerpic__img">
+					<h3 class="centerpic__title">in development</h3>
+				</div>
+
+				<div class="squares squares_game layout layout__big">
+
+					<div class="square square_20">
+						<div class="square__content">
+							<div class="square__slider">
+								<div class="square__slider_item">
+									<img src="static/img/content/11.jpg" alt="" class="square__slider_img">
+								</div>
+								<div class="square__slider_item">
+									<img src="static/img/content/02.jpg" alt="" class="square__slider_img">
+								</div>
+								<div class="square__slider_item">
+									<img src="static/img/content/03.jpg" alt="" class="square__slider_img">
+								</div>
+							</div>
+							<div class="square__footer">
+								<p class="square__title">VR projects</p>
+								<p class="desc_s">VR educational apps for doctors, soldiers & air pilots.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="square square_20">
+						<div class="square__content">
+							<div class="square__slider">
+								<div class="square__slider_item">
+									<img src="static/img/content/12.jpg" alt="" class="square__slider_img">
+								</div>
+								<div class="square__slider_item">
+									<img src="static/img/content/02.jpg" alt="" class="square__slider_img">
+								</div>
+								<div class="square__slider_item">
+									<img src="static/img/content/11.jpg" alt="" class="square__slider_img">
+								</div>
+							</div>
+							<div class="square__footer">
+								<p class="square__title">Cyclop</p>
+								<p class="desc_s">First-person shooter in apocalypse world.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			{{> footer/footer}}
+
+		</div>
+
+		<script src="static/js/separate-js/jQuery.min.js"></script>
+		<script src="static/js/separate-js/slick.min.js"></script>
+
+		<script src="static/js/separate-js/common.js"></script>
+		<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+	</body>
+
+</html>

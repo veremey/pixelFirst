@@ -1,0 +1,249 @@
+.squares
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	+try(-130px)
+	+r(650)
+		padding: 0
+		+try(0)
+	&_main
+		.square
+			&__title
+				+r(650)
+					bottom: 50px
+				+r(500)
+					font-size: 12vw
+			&__header
+				+r(450)
+					margin-bottom: 18px
+	&_game
+		.square
+			&__content
+				padding-bottom: 100px
+				+r(650)
+					min-height: 360px
+					padding-bottom: 70px
+			&__footer
+				position: relative
+				user-select: none
+			&__title
+				position: static
+				+cb
+				+r(1400)
+					line-height: .9
+					font-size: 7vw
+					margin-bottom: .5em
+
+
+
+.square
+	position: relative
+	width: 50%
+	background-color: #333
+	overflow: hidden
+	&:hover
+		animation: moveBg 5s ease infinite
+	+r(650)
+		width: 100%
+	&:after
+		content: ''
+		display: block
+		padding-bottom: 100%
+		+r(650)
+			content: none
+
+	.picon_about
+		fill: url(#st-about)
+	.picon_game
+		fill: url(#st-game)
+	.picon_career
+		fill: url(#st-career)
+	.picon_contacts
+		fill: url(#st-contacts)
+	&:hover
+		.picon_about
+			fill: url(#st-about-h)
+	&:hover
+		.picon_game
+			fill: url(#st-game-h)
+	&:hover
+		.picon_career
+			fill: url(#st-career-h)
+	&:hover
+		.picon_contacts
+			fill: url(#st-contacts-h)
+	&__content
+		display: flex
+		flex-direction: column
+		+coverdiv
+		padding: 50px 40px
+		overflow: auto
+		+r(650)
+			position: static
+		&::-webkit-scrollbar
+			width: 3px
+		&::-webkit-scrollbar-track
+			background-color: #f0f0f0
+		&::-webkit-scrollbar-thumb
+			background-color: #ccc
+
+		+r(650)
+			padding: 30px 24px
+	&__header
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 30px
+		.square__title
+			position: static
+			margin-bottom: 0
+			font-size: 72px
+			color: #fff
+			+cb
+			+r(1400)
+				font-size: 5vw
+			+r(650)
+				font-size: 10vw
+	&__picon
+		display: inline-block
+		vertical-align: top
+		height: 300px
+		margin-left: auto
+		+r(1400)
+			height: 14vw
+		+r(450)
+			height: 20vw
+
+	&__icon
+		display: inline-block
+		vertical-align: top
+		margin-left: 20px
+		max-width: 100%
+		max-height: 100%
+		+r(1400)
+			height: 8vw
+		+r(650)
+			height: 20vw
+
+	&__footer
+		margin-top: auto
+	&__row
+		margin-bottom: 40px
+		+r(1400)
+			margin-bottom: 3vw
+		+r(650)
+			margin-bottom: 5vw
+		&:last-child
+			margin-bottom: 0
+	&__label
+		font-size: 22px
+		margin-bottom: .8em
+		line-height: .9em
+		letter-spacing: -0.025em
+		color: #fff
+		+cl
+		+r(1400)
+			font-size: 1.6vw
+		+r(650)
+			font-size: 4vw
+	&__name
+		font-size: 44px
+		color: #fff
+		line-height: 1em
+		letter-spacing: -0.025em
+		+cl
+		+r(1400)
+			font-size: 3vw
+		+r(650)
+			font-size: 7vw
+	&__img
+		position: absolute
+		top: 70px
+		right: 80px
+	&__title
+		position: absolute
+		left: 40px
+		bottom: 70px
+		font-size: 72px
+		letter-spacing: -.025em
+		color: #fff
+		+cl
+	&__slider
+		+coverdiv
+		overflow: hidden
+		&_item
+			position: relative
+			width: 100%
+			height: 100%
+			overflow: hidden
+		&_img
+			+vcenter
+			min-height: 100%
+		.slick-dots
+			position: absolute
+			bottom: 30px
+			left: 45px
+			padding: 0
+			margin: 0
+			+r(650)
+				left: 30px
+				bottom: 20px
+			li
+				display: inline-block
+				vertical-align: top
+				width: 14px
+				height: 14px
+				border: 1px solid #fff
+				background-color: $n
+				border-radius: 100%
+				margin-right: 12px
+				overflow: hidden
+				&.slick-active
+					background-color: #fff
+			button
+				background-color: $n
+				+hidetext
+
+	&_1
+		&:before
+			content: ''
+			position: absolute
+			top: -100%
+			left: -100%
+			height: 200%
+			width: 200%
+			background: radial-gradient(ellipse at center, #b768fc 0%,#207cca 100%)
+	&_10
+		background: linear-gradient(45deg, #b668fc 30%,#6574f9 100%)
+		background-size: 200% 200%
+	&_11
+		background: linear-gradient(45deg, #f268c0 30%,#833da6 100%)
+		background-size: 200% 200%
+
+	&_20
+		background: linear-gradient(45deg, #b768fc 30%,#3075f9 100%)
+		background-size: 200% 200%
+	&_21
+		background: linear-gradient(45deg, #f367c0 30%,#853ea7 100%)
+		background-size: 200% 200%
+	&_22
+		background: linear-gradient(45deg, #fec31d 30%,#f20564 100%)
+		background-size: 200% 200%
+	&_23
+		background: linear-gradient(45deg, #79df4e 30%,#07beeb 100%)
+		background-size: 200% 200%
+	&.square_career
+		background-color: #fff
+		border: 1px solid #f1f1f1
+		&:nth-of-type(odd)
+			background-color: #f1f1f1
+		.square
+			&__header
+				display: block
+			&__title
+				color: #000
+			&__footer
+				margin-top: 0
+
+
+
