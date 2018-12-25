@@ -2185,6 +2185,7 @@ yx-axis
 .header__link {
   font-size: 24px;
   color: #a8a8a8;
+  text-transform: capitalize;
   font-family: 'Circe-Light', Arial, sans-serif;
   -webkit-transition: 0.4s;
   transition: 0.4s;

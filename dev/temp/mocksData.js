@@ -8,42 +8,42 @@
 'header': {
 	contact: {
 		item: [
-			{link: 'About'},
-			{link: 'Games'},
-			{link: 'Career'},
-			{link: 'Contacts', active: 'is-active'}
+			{link: 'about'},
+			{link: 'games'},
+			{link: 'career'},
+			{link: 'contacts', active: 'is-active'}
 		]
 	},
 	career: {
 		item: [
-			{link: 'About'},
-			{link: 'Games'},
-			{link: 'Career', active: 'is-active'},
-			{link: 'Contacts'}
+			{link: 'about'},
+			{link: 'games'},
+			{link: 'career', active: 'is-active'},
+			{link: 'contacts'}
 		]
 	},
 	about: {
 		item: [
-			{link: 'About', active: 'is-active'},
-			{link: 'Games'},
-			{link: 'Career'},
-			{link: 'Contacts'}
+			{link: 'about', active: 'is-active'},
+			{link: 'games'},
+			{link: 'career'},
+			{link: 'contacts'}
 		]
 	},
 	main: {
 		item: [
-			{link: 'About'},
-			{link: 'Games'},
-			{link: 'Career'},
-			{link: 'Contacts'}
+			{link: 'about'},
+			{link: 'games'},
+			{link: 'career'},
+			{link: 'contacts'}
 		]
 	},
 	games: {
 		item: [
-			{link: 'About'},
-			{link: 'Games', active: 'is-active'},
-			{link: 'Career'},
-			{link: 'Contacts'}
+			{link: 'about'},
+			{link: 'games', active: 'is-active'},
+			{link: 'career'},
+			{link: 'contacts'}
 		]
 	}
 },
