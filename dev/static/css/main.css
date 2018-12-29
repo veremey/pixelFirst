@@ -2968,8 +2968,8 @@ yx-axis
 }
 
 .square_20 {
-  background: -webkit-linear-gradient(45deg, rgba(183, 104, 252, 0.4) 30%, rgba(48, 117, 249, 0.6) 100%);
-  background: linear-gradient(45deg, rgba(183, 104, 252, 0.4) 30%, rgba(48, 117, 249, 0.6) 100%);
+  background: -webkit-linear-gradient(45deg, #b768fc 30%, #3075f9 100%);
+  background: linear-gradient(45deg, #b768fc 30%, #3075f9 100%);
   background-size: 200% 200%;
 }
 
