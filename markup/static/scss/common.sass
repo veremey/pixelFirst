@@ -67,10 +67,12 @@ p
 .page-game
 	position: relative
 	overflow: hidden
-	&:before
-		content: ''
-		+coverdiv
-		background: linear-gradient(45deg, rgba(0, 0, 0, .4) 0%,rgba(0, 0, 0, 0) 100%)
+	// &:before
+	// 	content: ''
+	// 	+coverdiv
+	// 	background: linear-gradient(45deg, rgba(0, 0, 0, .4) 0%,rgba(0, 0, 0, 0) 100%)
+	#XMLID_2418_
+		fill: $n
 
 .layout
 	position: relative
@@ -84,22 +86,30 @@ p
 
 .main-section
 	position: relative
-	height: 100vh
-	.video
-		.layout
-			height: 100vh
-			position: absolute
-			top: 0
-			left: 50%
-			padding-top: 30vh
-			z-index: 10
-			pointer-events: none
-			+trx(-50%)
-		.title__main
-			display: inline-block
-			margin-bottom: .4em
-			&:after
-				background: linear-gradient(45deg, #05bdee 0%, #7be04d 100%)
+	height: 96vh
+
+	.layout
+		height: 100vh
+		position: absolute
+		top: 0
+		left: 50%
+		padding-top: 32vh
+		padding-left: 34px
+		z-index: 10
+		pointer-events: none
+		+trx(-50%)
+		+r(800)
+			padding-left: 25px
+	.title__main
+		display: inline-block
+		line-height: 1
+		margin-bottom: .3em
+		+r(650)
+			font-size: 100px
+		+r(500)
+			font-size: 16vw
+		&:after
+			background: linear-gradient(45deg, #05bdee 0%, #7be04d 100%)
 
 .startscreen
 	position: relative
@@ -107,8 +117,10 @@ p
 	&__img
 		display: inline-block
 		vertical-align: top
-		height: 130px
+		height: 300px
 		fill: #c3ad73
+		+r(1024)
+			height: 130px
 		+r(650)
 			position: absolute
 			bottom: 40px
@@ -151,6 +163,13 @@ p
 		line-height: .9em
 		margin-bottom: .3em
 
+.startscreen-1,
+.startscreen-2
+	.layout
+		height: 89vh
+		+r(800)
+			height: 70vh
+
 .game
 	position: relative
 	height: 100vh
@@ -176,6 +195,12 @@ p
 			right: -40px
 			height: 2px
 			background: linear-gradient(45deg, #05bdee 0%, #7be04d 100%)
+			+r(800)
+				left: -20px
+				right: 0
+			+r(400)
+				left: 10px
+				right: 30px
 	&__subtitle
 		width: 100%
 		max-width: 1000px
@@ -186,13 +211,19 @@ p
 		line-height: 1.2
 		color: #fff
 		+cr
+		+r(650)
+			font-size: 24px
 	&__logo
 		fill: #fff
 		margin: 0 auto
 		height: 260px
+		+r(400)
+			+scale(.8)
 	.layout
 		height: 100vh
 		position: absolute
+		left: 50%
+		+trx(-50%)
 		z-index: 10
 		padding-top: 20vh
 
@@ -216,9 +247,11 @@ p
 		text-transform: uppercase
 		text-align: center
 		+cb
+		transform: translateY(46px)
+		+r(900)
+			+try(0)
 		+r(650)
 			+try(3em)
-
 
 .tab
 	margin-bottom: 20px
@@ -239,6 +272,7 @@ p
 		+cb
 		+r(650)
 			font-size: 3vw
+			margin-right: 20px
 		+r(420)
 			font-size: 4vw
 		&.is-active
@@ -285,12 +319,17 @@ p
 	max-width: 1600px
 	padding: 65px 50px
 	background-color: #f1f1f1
-	margin-top: 50px
+	margin: 50px auto 0
 	+try(-130px)
 	+r(1600)
 		width: calc(100% - 30px)
 		margin: 50px 15px
+	+r(800)
+		width: 100%
+		margin: 50px 0 0
+		padding: 45px 30px
 	+r(650)
+		padding: 45px 24px
 		+try(0)
 	&__title
 		font-size: 72px
@@ -299,7 +338,9 @@ p
 		letter-spacing: -0.025em
 		+cb
 		+r(1400)
-			font-size: 7vw
+			font-size: 5vw
+		+r(650)
+			font-size: 10vw
 
 .vitaemo
 	display: flex
@@ -323,9 +364,10 @@ p
 			width: 49%
 		+r(850)
 			width: 100%
+			margin-bottom: 30px
 		&.has-content
 			label
-				font-size: 1.4vw
+				font-size: 5vw
 				top: 2px
 	&__input
 		display: block
@@ -337,10 +379,11 @@ p
 		color: #000
 		+cl
 		+r(1400)
-			font-size: 2vw
-			height: 60px
+			height: 80px
 			line-height: .9
 			padding: 20px 18px 6px
+		+r(350)
+			font-size: 6vw
 	&__btn
 		position: relative
 		display: flex
@@ -352,6 +395,9 @@ p
 		border: none
 		letter-spacing: -0.025em
 		+cb
+		+r(800)
+			margin-left: auto
+			margin-right: auto
 		&:after
 			content: ''
 			position: absolute
@@ -379,7 +425,9 @@ p
 		+tr(.4s)
 		+r(1400)
 			top: 16px
-			font-size: 1.8vw
+		+r(350)
+			top: 16px
+			font-size: 4vw
 
 .file
 	width: 0.1px
@@ -411,6 +459,7 @@ p
 		+r(1400)
 			height: 135px
 		+r(650)
+			flex-direction: row
 			width: 100%
 			margin: 0
 
@@ -418,14 +467,11 @@ p
 		margin-bottom: 10px
 		+r(1024)
 			height: 46%
+		+r(650)
+			margin: 0 14px 0 0
 
 .carusel,
 .video
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-
 	&__item
 		position: relative
 		height: 100vh
@@ -446,12 +492,14 @@ p
 		flex-direction: column
 		height: 100%
 		padding: 70px 40px
+		cursor: pointer
 		+coverdiv
 		+r(1400)
 			padding: 4vw 40px
 		+r(650)
-			position: static
-			padding: 40px 30px
+			padding: 44px 30px
+		+r(400)
+			padding: 30px 22px
 		&_0
 			background: linear-gradient(30deg, #b768fc 0%,#6175f9 30%, #b768fc 60%,#6175f9 100%)
 			background-size: 200% 200%
@@ -475,6 +523,7 @@ p
 		display: flex
 		flex-direction: column
 		align-items: flex-start
+		height: 100%
 	&__icon
 		display: inline-block
 		vertical-align: top
@@ -485,15 +534,21 @@ p
 		+r(650)
 			height: 110px
 			margin-bottom: 30px
+		+r(400)
+			height: 80px
+			margin-bottom: 30px
 	&__text
 		font-size: 48px
 		letter-spacing: -.025em
 		color: #fff
+		margin-top: auto
 		+cl
 		+r(1400)
 			font-size: 3vw
 		+r(650)
-			font-size: 30px
+			font-size: 24px
+		+r(400)
+			font-size: 6vw
 
 	.slick-dots
 		display: flex
@@ -520,18 +575,26 @@ p
 				content: ''
 				display: block
 				padding-bottom: 100%
-				+r(650)
-					content: none
+				// +r(650)
+				// 	content: none
 		.slick-active span
 			animation: moveBg 15s ease infinite
 
 
-.video__img
-	display: none
-	+r(850)
-		display: block
-	&.is-mobile
+.video
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	&__item
+		height: 100%
+	&__img
 		display: none
+		+r(850)
+			display: block
+		&.is-mobile
+			display: none
 
 .video__video
 	display: block

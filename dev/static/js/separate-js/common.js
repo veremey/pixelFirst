@@ -6,11 +6,13 @@ $(function(){
 $(document).ready(function(){
 	/* --- video ---*/
 	if(detectmob()){
-		setTimeout(function(){
-			$(".video__img").addClass('is-mobile');
-			$(".video__video").addClass('is-mobile');
-			$(".video__video").play();
-		}, 1000);
+		if($(".video__video").length){
+			setTimeout(function(){
+				$(".video__img").addClass('is-mobile');
+				$(".video__video").addClass('is-mobile');
+				$(".video__video").eq(0).play();
+			}, 1000);
+		}
 	}
 	/*-----------------------------------------------------------*/
 
@@ -26,9 +28,15 @@ $(document).ready(function(){
 				return '<span class="carusel__dot carusel__dot_'+i+'">'+thumb+'</span>';
 			},
 			slidesToShow: 1,
-			slidesToScroll: 1,
+			slidesToScroll: 1
 		});
 	}
+
+	$('.carusel__dot').click(function() {
+		$('html, body').animate({
+			scrollTop: 0}
+			, 400)
+	});
 	/*-----------------------------------------------------------*/
 		/* --- game ---*/
 	$('.square__slider_item').height($('.square__slider').height());
@@ -44,7 +52,7 @@ $(document).ready(function(){
 	}
 	/*-----------------------------------------------------------*/
 
-	$('.trigger').on('touchstart click', function(){
+	$('.trigger').on('touchstart', function(){
 		$(this).toggleClass('is-active');
 	});
 

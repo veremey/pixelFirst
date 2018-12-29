@@ -6,8 +6,8 @@
 	+trx(-50%)
 	height: 130px
 	width: 100%
-	max-width: 1570px
-	padding: 0 40px
+	max-width: 1600px
+	padding: 0 48px
 	background-color: #000
 	display: flex
 	align-items: center
@@ -18,10 +18,11 @@
 		width: 100%
 		transform: none
 		left: 0
-	&.fixed
-		height: 60px
-		.header__logo svg
-			+scale(.4)
+		padding: 0 25px
+	// &.fixed
+	// 	height: 60px
+	// 	.header__logo svg
+	// 		+scale(.4)
 	&__wrap
 		display: flex
 		align-items: center
@@ -42,7 +43,8 @@
 			vertical-align: top
 			height: 91px
 			+r(800)
-				+scale(.8)
+				+scale(.6)
+				margin-left: -20%
 	&__nav
 		+r(800)
 			display: flex
@@ -60,7 +62,7 @@
 	&__item
 		display: inline-block
 		vertical-align: top
-		margin-left: 40px
+		margin-left: 34px
 		+r(800)
 			margin-left: 0
 		&.is-active
@@ -105,9 +107,12 @@
 		&_email
 			text-decoration: underline
 
-
 .lang
 	display: flex
+	margin-left: 68px
+	+r(800)
+		+vcenter
+		margin-left: 0
 	&__link
 		font-size: 24px
 		color: #a8a8a8
