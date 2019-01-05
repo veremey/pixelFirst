@@ -467,6 +467,13 @@ blockquote {
   height: 2px;
 }
 
+@media only screen and (max-width: 800px) {
+  .title__main:after {
+    right: auto;
+    width: 72vw;
+  }
+}
+
 .desc__subtitle {
   font-size: 36px;
   color: #fff;
@@ -649,7 +656,13 @@ p {
 
 .main-section {
   position: relative;
-  height: 96vh;
+  height: 89vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-section {
+    height: 70vh;
+  }
 }
 
 .main-section .layout {
@@ -657,7 +670,7 @@ p {
   position: absolute;
   top: 0;
   left: 50%;
-  padding-top: 32vh;
+  padding-top: 20vh;
   padding-left: 34px;
   z-index: 10;
   pointer-events: none;
@@ -768,8 +781,15 @@ p {
   pointer-events: none;
 }
 
-.startscreen-about .startscreen__content {
-  padding-top: 40vh;
+.startscreen-about .slick-list:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(45deg, rgba(1, 21, 69, 0.8) 0%, rgba(1, 21, 69, 0.1) 50%);
+  background: linear-gradient(45deg, rgba(1, 21, 69, 0.8) 0%, rgba(1, 21, 69, 0.1) 50%);
 }
 
 .startscreen .title__main:after {
@@ -777,8 +797,16 @@ p {
   background: linear-gradient(45deg, #05bdee 0%, #7be04d 100%);
 }
 
-.startscreen .layout {
-  height: 100vh;
+.startscreen .layout,
+.startscreen .slick-list {
+  height: 89vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .startscreen .layout,
+  .startscreen .slick-list {
+    height: 70vh;
+  }
 }
 
 .startscreen .title__main {
@@ -788,22 +816,21 @@ p {
   margin-bottom: .3em;
 }
 
-.startscreen-1 .layout,
-.startscreen-2 .layout {
-  height: 89vh;
-}
-
-@media only screen and (max-width: 800px) {
-  .startscreen-1 .layout,
-  .startscreen-2 .layout {
-    height: 70vh;
-  }
-}
-
 .game {
   position: relative;
   height: 100vh;
   overflow: hidden;
+}
+
+.game:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(45deg, rgba(1, 21, 69, 0.8) 0%, rgba(1, 21, 69, 0.1) 50%);
+  background: linear-gradient(45deg, rgba(1, 21, 69, 0.8) 0%, rgba(1, 21, 69, 0.1) 50%);
 }
 
 .game__img {
@@ -873,6 +900,12 @@ p {
   height: 260px;
 }
 
+@media only screen and (max-width: 800px) {
+  .game__logo {
+    height: 200px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .game__logo {
     -webkit-transform: scale(0.8);
@@ -894,8 +927,15 @@ p {
   position: relative;
   text-align: center;
   margin: 0 auto;
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
+  -webkit-transform: translate(-4%, -49%);
+          transform: translate(-4%, -49%);
+}
+
+@media only screen and (max-width: 800px) {
+  .centerpic {
+    -webkit-transform: translate(-4%, -33%);
+            transform: translate(-4%, -33%);
+  }
 }
 
 .centerpic__img {
@@ -928,8 +968,8 @@ p {
 
 @media only screen and (max-width: 650px) {
   .centerpic__title {
-    -webkit-transform: translateY(3em);
-            transform: translateY(3em);
+    -webkit-transform: translateY(2em);
+            transform: translateY(2em);
   }
 }
 
@@ -1565,10 +1605,11 @@ p {
   padding-bottom: 100%;
 }
 
-.carusel .slick-dots .slick-active span,
-.video .slick-dots .slick-active span {
-  -webkit-animation: moveBg 15s ease infinite;
-          animation: moveBg 15s ease infinite;
+@media only screen and (max-width: 800px) {
+  .carusel .slick-dots li:after,
+  .video .slick-dots li:after {
+    padding-bottom: 84%;
+  }
 }
 
 .video {
@@ -1609,42 +1650,6 @@ p {
 
 .video__video.is-mobile {
   display: block;
-}
-
-@-webkit-keyframes moveBg {
-  0% {
-    background-position: 0% 50%;
-  }
-  30% {
-    background-position: 50% 50%;
-  }
-  30% {
-    background-position: 100% 50%;
-  }
-  60% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes moveBg {
-  0% {
-    background-position: 0% 50%;
-  }
-  30% {
-    background-position: 50% 50%;
-  }
-  30% {
-    background-position: 100% 50%;
-  }
-  60% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .text-center {
@@ -2555,7 +2560,7 @@ yx-axis
 @media only screen and (max-width: 650px) {
   .squares_game .square__content {
     min-height: 360px;
-    padding: 30px 30px 70px;
+    padding: 30px 30px 50px;
   }
 }
 
@@ -2583,7 +2588,7 @@ yx-axis
 
 @media only screen and (max-width: 800px) {
   .squares_game .square__title {
-    font-size: 50px;
+    font-size: 36px;
   }
 }
 
@@ -2595,7 +2600,7 @@ yx-axis
 
 @media only screen and (max-width: 800px) {
   .squares_game .square .desc_s {
-    font-size: 34px;
+    font-size: 24px;
   }
 }
 
@@ -2917,7 +2922,7 @@ yx-axis
 @media only screen and (max-width: 650px) {
   .square__slider .slick-dots {
     left: 30px;
-    bottom: 20px;
+    bottom: 8px;
   }
 }
 
@@ -2931,6 +2936,13 @@ yx-axis
   border-radius: 100%;
   margin-right: 12px;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 650px) {
+  .square__slider .slick-dots li {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .square__slider .slick-dots li.slick-active {

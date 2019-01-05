@@ -19,7 +19,7 @@ $(document).ready(function(){
 		/* --- about ---*/
 	if($('.carusel').length){
 		$('.carusel').slick({
-			infinite: false,
+			infinite: true,
 			dots: true,
 			autoplay: true,
 			arrows: false,
@@ -42,7 +42,7 @@ $(document).ready(function(){
 	$('.square__slider_item').height($('.square__slider').height());
 	if($('.square__slider').length){
 		$('.square__slider').slick({
-			infinite: false,
+			infinite: true,
 			dots: true,
 			autoplay: true,
 			arrows: false,

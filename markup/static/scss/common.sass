@@ -86,14 +86,15 @@ p
 
 .main-section
 	position: relative
-	height: 96vh
-
+	height: 89vh
+	+r(800)
+		height: 70vh
 	.layout
 		height: 100vh
 		position: absolute
 		top: 0
 		left: 50%
-		padding-top: 32vh
+		padding-top: 20vh
 		padding-left: 34px
 		z-index: 10
 		pointer-events: none
@@ -149,31 +150,34 @@ p
 			right: 0
 			z-index: 10
 			pointer-events: none
-		.startscreen__content
-			padding-top: 40vh
+		.slick-list
+			&:after
+				content: ''
+				+coverdiv
+				background: linear-gradient(45deg, rgba(1, 21, 69, .8) 0%, rgba(1, 21, 69, .1) 50%)
 	.title__main
 		&:after
 			background: linear-gradient(45deg, #05bdee 0%, #7be04d 100%)
-	.layout
-		height: 100vh
-
+	.layout,
+	.slick-list
+		height: 89vh
+		+r(800)
+			height: 70vh
 	.title__main
 		display: inline-block
 		vertical-align: top
 		line-height: .9em
 		margin-bottom: .3em
 
-.startscreen-1,
-.startscreen-2
-	.layout
-		height: 89vh
-		+r(800)
-			height: 70vh
-
 .game
 	position: relative
 	height: 100vh
 	overflow: hidden
+	&:after
+		content: ''
+		+coverdiv
+		background: linear-gradient(45deg, rgba(1, 21, 69, .8) 0%, rgba(1, 21, 69, .1) 50%)
+
 	&__img
 		position: absolute
 		top: 50%
@@ -217,6 +221,8 @@ p
 		fill: #fff
 		margin: 0 auto
 		height: 260px
+		+r(800)
+			height: 200px
 		+r(400)
 			+scale(.8)
 	.layout
@@ -232,7 +238,9 @@ p
 	text-align: center
 	margin: 0 auto
 	// overflow: hidden
-	+try(-40%)
+	transform: translate(-4%, -49%)
+	+r(800)
+		transform: translate(-4%, -33%)
 	&__img
 		display: inline-block
 		vertical-align: top
@@ -251,7 +259,7 @@ p
 		+r(900)
 			+try(0)
 		+r(650)
-			+try(3em)
+			+try(2em)
 
 .tab
 	margin-bottom: 20px
@@ -575,11 +583,8 @@ p
 				content: ''
 				display: block
 				padding-bottom: 100%
-				// +r(650)
-				// 	content: none
-		.slick-active span
-			animation: moveBg 15s ease infinite
-
+				+r(800)
+					padding-bottom: 84%
 
 .video
 	position: absolute
@@ -604,17 +609,17 @@ p
 		display:  block
 
 
-@keyframes moveBg
-	0%
-		background-position: 0% 50%
-	30%
-		background-position: 50% 50%
-	30%
-		background-position: 100% 50%
-	60%
-		background-position: 50% 50%
-	100%
-		background-position: 0% 50%
+// @keyframes moveBg
+// 	0%
+// 		background-position: 0% 50%
+// 	30%
+// 		background-position: 50% 50%
+// 	30%
+// 		background-position: 100% 50%
+// 	60%
+// 		background-position: 50% 50%
+// 	100%
+// 		background-position: 0% 50%
 
 
 .text-center
