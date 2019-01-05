@@ -61,6 +61,12 @@ p
 	width: 5px
 
 
+.page__list
+	padding: 0
+	margin: 0
+	list-style: none
+	text-align: center
+
 .page__wrapper
 	position: relative
 
@@ -79,6 +85,8 @@ p
 	width: 100%
 	padding: 0 15px
 	margin: 0 auto
+	+r(800)
+		padding: 0 25px
 	&__big
 		max-width: 1600px
 	&__small
@@ -120,12 +128,15 @@ p
 		vertical-align: top
 		height: 300px
 		fill: #c3ad73
+		+r(1600)
+			height: 200px
 		+r(1024)
 			height: 130px
-		+r(650)
+		+r(800)
 			position: absolute
 			bottom: 40px
 			right: 30px
+			height: 110px
 
 	&__content
 		display: flex
@@ -134,9 +145,8 @@ p
 		padding-top: 20%
 		+r(1400)
 			padding-top: 24vh
-		+r(650)
+		+r(800)
 			display: block
-
 	&-1
 		background: linear-gradient(30deg, #7be04d 0%,#05bdee 100%)
 	&-2
@@ -159,7 +169,7 @@ p
 		&:after
 			background: linear-gradient(45deg, #05bdee 0%, #7be04d 100%)
 	.layout,
-	.slick-list
+	.slick-slide
 		height: 89vh
 		+r(800)
 			height: 70vh
@@ -202,9 +212,10 @@ p
 			+r(800)
 				left: -20px
 				right: 0
-			+r(400)
-				left: 10px
-				right: 30px
+			+r(650)
+				left: 50%
+				+trx(-50%)
+				width: 70vw
 	&__subtitle
 		width: 100%
 		max-width: 1000px
@@ -216,13 +227,15 @@ p
 		color: #fff
 		+cr
 		+r(650)
-			font-size: 24px
+			font-size: 20px
 	&__logo
 		fill: #fff
 		margin: 0 auto
 		height: 260px
 		+r(800)
 			height: 200px
+		+r(650)
+			height: 140px
 		+r(400)
 			+scale(.8)
 	.layout
@@ -495,6 +508,8 @@ p
 		transform: translate(-50%, -50%)
 		min-height: 100%
 		min-width: 100%
+		+r(800)
+			height: 100%
 	&__dot
 		display: flex
 		flex-direction: column

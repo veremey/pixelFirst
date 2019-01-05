@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js x-2" lang="en-Us">
+
+	<head>
+		{{> head/head head.defaults}}
+	</head>
+
+	<body class="page">
+
+		<div class="page__wrapper">
+			{{> header/header header.about}}
+
+			<section class="startscreen startscreen-about">
+				<div class="layout layout__big">
+					<div class="startscreen__content">
+						<div class="startscreen__titles">
+							<h1 class="title__main">About</h1>
+							<p class="desc__subtitle">A world light years beyond your imagination.</p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="carusel">
+					<div class="carusel__item">
+						<img src="static/img/content/01.jpg" alt="" class="carusel__img">
+						<div class="carusel__content">
+							<div class="carusel__box">
+								<img src="static/img/content/eat.png" alt="" class="carusel__icon">
+								<p class="carusel__text">Pixel Force is a mobile game developer based in Helsinki, Finland, with offices in San Francisco, Tokyo, Seoul and Shanghai. </p>
+							</div>
+						</div>
+					</div>
+					<div class="carusel__item">
+						<img src="static/img/content/02.jpg" alt="" class="carusel__img">
+						<div class="carusel__content">
+							<div class="carusel__box">
+								<img src="static/img/content/be.png" alt="" class="carusel__icon">
+								<p class="carusel__text">Pixel Force is a mobile game developer based in Helsinki, Finland, with offices in San Francisco, Tokyo, Seoul and Shanghai. </p>
+							</div>
+						</div>
+					</div>
+					<div class="carusel__item">
+						<img src="static/img/content/03.jpg" alt="" class="carusel__img">
+						<div class="carusel__content">
+							<div class="carusel__box">
+								<img src="static/img/content/plane.png" alt="" class="carusel__icon">
+								<p class="carusel__text">Our goal is to make the best games – games that are played by as many people as possible, enjoyed for years and remembered forever.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			{{> footer/footer}}
+
+		</div>
+
+		<script src="static/js/separate-js/jQuery.min.js"></script>
+		<script src="static/js/separate-js/slick.min.js"></script>
+		<script src="static/js/separate-js/common.js"></script>
+		<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+	</body>
+
+</html>

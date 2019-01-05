@@ -1,92 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="en-Us">
+<html class="no-js x-2" lang="en-Us">
 
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>pixel force</title>
-		<meta content="" name="description">
-		<meta content="" name="keywords">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<meta content="telephone=no" name="format-detection">
-		<meta name="HandheldFriendly" content="true">
-		<link href="static/css/slick.css" rel="stylesheet" type="text/css">
-		<link href="static/css/main.css" rel="stylesheet" type="text/css">
-		
-		
-		<link rel="icon" type="image/png" href="favicon.png">
-		<script>
-		    (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
-		</script>
-		
+		{{> head/head head.defaults}}
 	</head>
 
 	<body class="page">
 
 		<div class="page__wrapper">
-			<header class="header">
-			
-				<a href="index.html" class="header__logo">
-					<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 78 91" enable-background="new 0 0 78 91">
-						<defs>
-							<linearGradient id="PSgrad_0" x1="50%" y1="0%" x2="0%" y2="50%" >
-								<stop offset="50%" stop-color="#e364a2">
-									<animate attributeName="stop-color" values="#e364a2; #4271dd; #e364a2" dur="10s" repeatCount="indefinite"></animate>
-								</stop>
-								<stop offset="100%" stop-color="#4271dd">
-									<animate attributeName="stop-color" values="#4271dd; #e364a2; #4271dd" dur="10s" repeatCount="indefinite"></animate>
-								</stop>
-							</linearGradient>
-						</defs>
-						<g>
-						<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-						 d="M59.619,68.020 L59.619,72.105 L41.339,79.050 L41.339,83.135 L20.670,90.999 L0.001,83.135 L0.001,7.867 L20.670,0.003 L59.619,14.812 L59.619,32.888 L78.002,39.935 L78.002,61.075 L59.619,68.020 ZM41.235,74.250 L55.049,69.041 L55.049,68.020 L41.235,62.811 L41.235,74.250 ZM41.235,57.909 L55.049,63.322 L55.049,50.046 L41.235,44.633 L41.235,57.909 ZM22.955,85.279 L36.769,80.071 L36.769,79.050 L22.955,73.841 L22.955,85.279 ZM4.571,80.173 L18.385,85.382 L18.385,67.305 L36.769,74.352 L36.769,61.075 L18.385,54.028 L18.385,31.254 L36.665,38.199 L36.665,24.922 L4.571,12.667 L4.571,80.173 ZM27.005,52.497 L36.769,56.275 L36.769,48.718 L27.005,52.497 ZM36.769,44.020 L36.769,42.999 L22.955,37.790 L22.955,49.228 L36.769,44.020 ZM20.566,4.803 L8.518,9.399 L38.950,21.041 L50.894,16.344 L20.566,4.803 ZM55.049,19.509 L41.235,24.922 L41.235,38.199 L55.049,32.786 L55.049,19.509 ZM57.386,36.871 L45.285,41.467 L57.386,46.062 L69.486,41.467 L57.386,36.871 ZM73.432,44.633 L59.619,50.046 L59.619,63.322 L73.432,57.909 L73.432,44.633 Z"/>
-						<path fill="url(#PSgrad_0)"
-						 d="M59.619,68.020 L59.619,72.105 L41.339,79.050 L41.339,83.135 L20.670,90.999 L0.001,83.135 L0.001,7.867 L20.670,0.003 L59.619,14.812 L59.619,32.888 L78.002,39.935 L78.002,61.075 L59.619,68.020 ZM41.235,74.250 L55.049,69.041 L55.049,68.020 L41.235,62.811 L41.235,74.250 ZM41.235,57.909 L55.049,63.322 L55.049,50.046 L41.235,44.633 L41.235,57.909 ZM22.955,85.279 L36.769,80.071 L36.769,79.050 L22.955,73.841 L22.955,85.279 ZM4.571,80.173 L18.385,85.382 L18.385,67.305 L36.769,74.352 L36.769,61.075 L18.385,54.028 L18.385,31.254 L36.665,38.199 L36.665,24.922 L4.571,12.667 L4.571,80.173 ZM27.005,52.497 L36.769,56.275 L36.769,48.718 L27.005,52.497 ZM36.769,44.020 L36.769,42.999 L22.955,37.790 L22.955,49.228 L36.769,44.020 ZM20.566,4.803 L8.518,9.399 L38.950,21.041 L50.894,16.344 L20.566,4.803 ZM55.049,19.509 L41.235,24.922 L41.235,38.199 L55.049,32.786 L55.049,19.509 ZM57.386,36.871 L45.285,41.467 L57.386,46.062 L69.486,41.467 L57.386,36.871 ZM73.432,44.633 L59.619,50.046 L59.619,63.322 L73.432,57.909 L73.432,44.633 Z"/>
-						</g>
-					</svg>
-			
-				</a>
-				<div class="lang">
-					<a href="#" class="lang__link" lang="ru">ru</a>
-					<a href="#" class="lang__link is-active" lang="en">en</a>
-				</div>
-				<div class="trigger ">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<div class="header__wrap">
-					<nav class="header__nav">
-						<ul class="header__list">
-								<li class="header__item ">
-									<a href="about.html" class="header__link">about</a>
-								</li>
-								<li class="header__item ">
-									<a href="games.html" class="header__link">games</a>
-								</li>
-								<li class="header__item is-active">
-									<a href="career.html" class="header__link">career</a>
-								</li>
-								<li class="header__item ">
-									<a href="contacts.html" class="header__link">contacts</a>
-								</li>
-						</ul>
-					</nav>
-					<div class="header__contact">
-						<a href="mailto:hello@pixelforce.io" class="header__contact_email">hello@pixelforce.io</a>
-						<a href="tel:74956778934" class="header__contact_tel">+7 495 6778934</a>
-					</div>
-				</div>
-			
-			</header>
+			{{> header/header header.career}}
 
 			<section class="startscreen startscreen-2">
 				<div class="layout layout__big">
@@ -205,22 +127,13 @@
 						<button class="vitaemo__btn">SEND APPLICATION <i></i></button>
 					</form>
 			</div>
-			
-			<footer class="footer">
-				<div class="layout layout__big">
-					<a href="#" class="copy">&copy; 2019 Pixel Force</a>
-					<a href="mailto:hello@pixelforce.io" class="footer__mail">hello@pixelforce.io</a>
-					<a href="tel:+74956778934" class="footer__tel">+7 495 6778934</a>
-				</div>
-			</footer>
-			
-			
+			{{> footer/footer}}
 
 		</div>
 
 		<script src="static/js/separate-js/jQuery.min.js"></script>
 		<script src="static/js/separate-js/common.js"></script>
-		<script src="/static/js/main.js"></script>
+		<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
 	</body>
 
 </html>

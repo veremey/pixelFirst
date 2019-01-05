@@ -19,3 +19,98 @@ $text: #6E6E6E
 	100%
 		transform: rotate(360deg)
 
+
+
+.x-2
+	.header
+		width: 84%
+		+r(1020)
+			height: 68px
+		+r(800)
+			width: 100%
+			left: 0
+			+trx(0)
+		&__logo svg
+			+r(1020)
+				transform: scale(0.6)
+				margin-left: -20%
+		&__wrap
+			+r(1020)
+				display: none
+		&__nav
+			+r(1020)
+				display: flex
+		&__list
+			+r(1020)
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+		&__item
+			+r(1020)
+				margin-left: 0
+		&__link
+			+r(1020)
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				font-size: 42px
+				+cr
+		&__contact
+			+r(1020)
+				display: flex
+	.layout
+		position: relative
+		width: 84%
+		padding: 0
+		margin: 0 auto
+		+r(1020)
+			width: 90%
+			padding: 0 25px
+		+r(650)
+			width: 100%
+	.startscreen-about .layout
+		+r(1020)
+			width: 100%
+			padding: 0 25px
+	.main-section
+		+r(1020)
+			margin-top: 67px
+	.main-section .layout
+		+r(800)
+			height: auto
+			width: 100%
+			padding-right: 25px
+			padding-left: 25px
+	.lang
+		+r(1100)
+			margin-left: 40px
+		+r(1020)
+			+vcenter
+			margin-left: 0
+		&__link
+			+r(1020)
+				margin: 0 2vw
+	.trigger
+		+r(1020)
+			position: static
+			display: grid
+	.squares
+		+r(800)
+			width: 100%
+			padding: 0
+	.square__content
+		+r(800)
+			padding: 14px 25px
+	.square__header .square__title
+		+r(800)
+			font-size: 9vw
+	.square__subtitle
+		+r(800)
+			font-size: 6vw
+	.startscreen__img
+		+r(800)
+			height: 84px
+
+

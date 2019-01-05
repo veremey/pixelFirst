@@ -4,9 +4,10 @@
 	flex-wrap: wrap
 	padding: 0
 	+try(-130px)
-	+r(650)
+	+r(800)
 		padding: 0
-		+try(0)
+		+try(-1px)
+		width: 100%
 	&_main
 		.square
 			+r(650)
@@ -190,6 +191,9 @@
 		+cl
 		+r(800)
 			font-size: 7vw
+	&__subtitle
+		+r(800)
+			font-size: 6vw
 	&__slider
 		+coverdiv
 		overflow: hidden

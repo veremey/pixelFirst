@@ -51,18 +51,36 @@
 'square': {},
 
 __pages: [{
+                name: 'about-2',
+                href: 'about-2.html'
+             },{
                 name: 'about',
                 href: 'about.html'
+             },{
+                name: 'career-2',
+                href: 'career-2.html'
              },{
                 name: 'career',
                 href: 'career.html'
              },{
+                name: 'contacts-2',
+                href: 'contacts-2.html'
+             },{
                 name: 'contacts',
                 href: 'contacts.html'
+             },{
+                name: 'games-2',
+                href: 'games-2.html'
              },{
                 name: 'games',
                 href: 'games.html'
              },{
                 name: 'index',
                 href: 'index.html'
+             },{
+                name: 'main-2',
+                href: 'main-2.html'
+             },{
+                name: 'main',
+                href: 'main.html'
              }]

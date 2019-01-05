@@ -63,7 +63,7 @@ $(document).ready(function(){
 		$(this).parents('.js-tab-parent').find('.js-tab').removeClass('is-active');
 		$(this).addClass('is-active');
 
-		$(this).parents('.js-tab-parent').find('.js-tab_section').removeClass('is-active');
+		$(this).parents('.js-tab-parent').find('.tab__section').removeClass('is-active');
 		$(this).parents('.js-tab-parent').find('.' + tabItem).addClass('is-active');
 
 	});
