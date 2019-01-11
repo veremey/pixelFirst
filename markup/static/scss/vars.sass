@@ -29,11 +29,15 @@ $text: #6E6E6E
 		+r(800)
 			width: 100%
 			left: 0
-			+trx(0)
+			transform: none
+			height: 50px
 		&__logo svg
 			+r(1020)
-				transform: scale(0.6)
+				height: 48px
+				transform: none
 				margin-left: -20%
+				+r(800)
+					height: 34px
 		&__wrap
 			+r(1020)
 				display: none
@@ -60,6 +64,13 @@ $text: #6E6E6E
 		&__contact
 			+r(1020)
 				display: flex
+	.trigger
+		+r(800)
+			height: 34px
+			width: 34px
+		span
+			+r(800)
+				border: 1px solid #000
 	.layout
 		position: relative
 		width: 84%
@@ -70,16 +81,43 @@ $text: #6E6E6E
 			padding: 0 25px
 		+r(650)
 			width: 100%
-	.startscreen-about .layout
+	.vitae
+		width: 84%
+		+r(1600)
+			margin: 50px auto
 		+r(1020)
-			width: 100%
-			padding: 0 25px
-	.main-section
-		+r(1020)
-			margin-top: 67px
-	.main-section .layout
+			width: calc(90% - 50px)
+			padding: 30px 25px
 		+r(800)
-			height: auto
+			width: 100%
+			margin-bottom: 0
+	.carusel
+		.slick-dots
+			width: 84%
+			+r(1600)
+				padding: 0
+			+r(1020)
+				width: 90%
+				padding: 0 25px
+			+r(800)
+				width: 100%
+				padding: 0
+	.startscreen-about .layout
+
+		+r(1020)
+			// width: 100%
+			padding: 0 25px
+	// .main-section
+	// 	+r(1020)
+	// 		margin-top: 67px
+	.main-section .layout
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding-top: 0
+		height: 100%
+		+r(800)
+			// height: auto
 			width: 100%
 			padding-right: 25px
 			padding-left: 25px
@@ -92,6 +130,8 @@ $text: #6E6E6E
 		&__link
 			+r(1020)
 				margin: 0 2vw
+			+r(800)
+				font-size: 20px
 	.trigger
 		+r(1020)
 			position: static

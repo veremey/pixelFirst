@@ -94,7 +94,7 @@ p
 
 .main-section
 	position: relative
-	height: 89vh
+	height: 100vh
 	+r(800)
 		height: 70vh
 	.layout
@@ -102,7 +102,7 @@ p
 		position: absolute
 		top: 0
 		left: 50%
-		padding-top: 20vh
+		padding-top: 21vh
 		padding-left: 34px
 		z-index: 10
 		pointer-events: none
@@ -126,8 +126,9 @@ p
 	&__img
 		display: inline-block
 		vertical-align: top
-		height: 300px
+		height: 240px
 		fill: #c3ad73
+		margin-left: auto
 		+r(1600)
 			height: 200px
 		+r(1024)
@@ -142,11 +143,16 @@ p
 		display: flex
 		align-items: center
 		justify-content: space-between
-		padding-top: 20%
+		// padding-top: 20%
+		height: 100%
 		+r(1400)
-			padding-top: 24vh
-		+r(800)
-			display: block
+			flex-direction: column
+			justify-content: center
+			// padding-top: 24vh
+		// +r(800)
+		// 	display: block
+	&__titles
+		width: 100%
 	&-1
 		background: linear-gradient(30deg, #7be04d 0%,#05bdee 100%)
 	&-2
@@ -170,7 +176,7 @@ p
 			background: linear-gradient(45deg, #05bdee 0%, #7be04d 100%)
 	.layout,
 	.slick-slide
-		height: 89vh
+		height: 100vh
 		+r(800)
 			height: 70vh
 	.title__main
@@ -182,11 +188,32 @@ p
 .game
 	position: relative
 	height: 100vh
-	overflow: hidden
+	// overflow: hidden//09.01
+
+	margin-bottom: 500px
+	+r(1100)
+		margin-bottom: 44vw
+	+r(650)
+		margin-bottom: 46vw
+
 	&:after
 		content: ''
 		+coverdiv
-		background: linear-gradient(45deg, rgba(1, 21, 69, .8) 0%, rgba(1, 21, 69, .1) 50%)
+		background: linear-gradient(45deg, #445276, rgba(0, 0, 0, .0001) 50%)
+
+	.centerpic
+		position: absolute
+		top: 100%
+		z-index: 20
+		+r(800)
+			transform: translate(0%, -33%)
+		&__img
+			+r(800)
+				transform: translate(-50%, -20%) scale(1)
+	&__bg
+		+coverdiv
+		overflow: hidden
+
 
 	&__img
 		position: absolute
@@ -251,7 +278,8 @@ p
 	text-align: center
 	margin: 0 auto
 	// overflow: hidden
-	transform: translate(-4%, -49%)
+	transform: translate(0%, -50%)
+
 	+r(800)
 		transform: translate(-4%, -33%)
 	&__img
@@ -260,22 +288,28 @@ p
 		position: relative
 		top: 0%
 		left: 50%
-		+trx(-52%)
+		+trx(-50%)
 		width: 120%
 		max-width: 1600px
+		+r(1920)
+			transform: translateX(-50%) scale(.8)
 	&__title
 		font-size: 18px
 		text-transform: uppercase
 		text-align: center
 		+cb
-		transform: translateY(46px)
-		+r(900)
-			+try(0)
-		+r(650)
-			+try(2em)
+		margin: 0
+		transform: translateY(-46px)
+		+r(1200)
+			transform: translateY(-20px)
+		// +r(900)
+		// 	+try(0)
+		// +r(650)
+		// 	+try(2em)
 
 .tab
 	margin-bottom: 20px
+	white-space: nowrap
 	&__section
 		display: flex
 		align-items: center
@@ -291,6 +325,10 @@ p
 		letter-spacing: -0.025em
 		text-transform: uppercase
 		+cb
+		+r(1200)
+			font-size: 1.5vw
+		+r(1000)
+			font-size: 1.7vw
 		+r(650)
 			font-size: 3vw
 			margin-right: 20px
@@ -347,8 +385,9 @@ p
 		margin: 50px 15px
 	+r(800)
 		width: 100%
-		margin: 50px 0 0
+		margin: 0
 		padding: 45px 30px
+		+try(0px)
 	+r(650)
 		padding: 45px 24px
 		+try(0)
@@ -479,6 +518,8 @@ p
 		+tr(.4s)
 		+r(1400)
 			height: 135px
+		+r(800)
+			color: #000
 		+r(650)
 			flex-direction: row
 			width: 100%
@@ -524,13 +565,13 @@ p
 		+r(400)
 			padding: 30px 22px
 		&_0
-			background: linear-gradient(30deg, #b768fc 0%,#6175f9 30%, #b768fc 60%,#6175f9 100%)
+			background: linear-gradient(45deg, rgba(183, 104, 252, 1) 30%,rgba(48, 117, 249, 1) 100%)
 			background-size: 200% 200%
 		&_1
-			background: linear-gradient(30deg, #f568c0 0%,#833da5 30%, #f568c0 60%,#833da5 100%)
+			background: linear-gradient(45deg, #f367c0 30%,#853ea7 100%)
 			background-size: 200% 200%
 		&_2
-			background: linear-gradient(30deg, #fec21c 0%,#f20664 30%, #fec21c 60%,#f20664 100%)
+			background: linear-gradient(45deg, #fec31d 30%,#f20564 100%)
 			background-size: 200% 200%
 		&_3
 			background: linear-gradient(30deg, #b768fc 0%,#6175f9 30%, #b768fc 60%,#6175f9 100%)
@@ -592,6 +633,7 @@ p
 			position: relative
 			width: 50%
 			overflow: hidden
+			cursor: pointer
 			+r(650)
 				width: 100%
 			&:after
