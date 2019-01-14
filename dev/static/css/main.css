@@ -548,6 +548,7 @@ blockquote {
 
 .x-2 .header {
   width: 84%;
+  height: 80px;
 }
 
 @media only screen and (max-width: 1020px) {
@@ -564,6 +565,10 @@ blockquote {
             transform: none;
     height: 50px;
   }
+}
+
+.x-2 .header__logo svg {
+  height: 50px;
 }
 
 @media only screen and (max-width: 1020px) {
@@ -802,7 +807,7 @@ blockquote {
 
 @media only screen and (max-width: 800px) {
   .x-2 .square__content {
-    padding: 14px 25px;
+    padding: 24px 25px 34px;
   }
 }
 
@@ -1151,15 +1156,45 @@ p {
   margin-bottom: 500px;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1500px) {
   .game {
-    margin-bottom: 44vw;
+    margin-bottom: 30vw;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .game {
+    margin-bottom: 24vw;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .game {
+    margin-bottom: 34vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .game {
+    margin-bottom: 36vw;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .game {
+    margin-bottom: 40vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .game {
+    margin-bottom: 36vw;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .game {
-    margin-bottom: 46vw;
+    margin-bottom: 36vw;
   }
 }
 
@@ -1177,21 +1212,8 @@ p {
 .game .centerpic {
   position: absolute;
   top: 100%;
+  left: 50%;
   z-index: 20;
-}
-
-@media only screen and (max-width: 800px) {
-  .game .centerpic {
-    -webkit-transform: translate(0%, -33%);
-            transform: translate(0%, -33%);
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .game .centerpic__img {
-    -webkit-transform: translate(-50%, -20%) scale(1);
-            transform: translate(-50%, -20%) scale(1);
-  }
 }
 
 .game__bg {
@@ -1211,6 +1233,12 @@ p {
           transform: translate(-50%, -50%);
   min-height: 100%;
   min-width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .game__img {
+    height: 100%;
+  }
 }
 
 .game__title {
@@ -1260,6 +1288,12 @@ p {
   font-family: 'Circe-Regular', Arial, sans-serif;
 }
 
+@media only screen and (max-height: 800px) {
+  .game__subtitle {
+    font-size: 24px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .game__subtitle {
     font-size: 20px;
@@ -1269,12 +1303,18 @@ p {
 .game__logo {
   fill: #fff;
   margin: 0 auto;
-  height: 260px;
+  height: 210px;
 }
 
 @media only screen and (max-width: 800px) {
   .game__logo {
-    height: 200px;
+    height: 164px;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .game__logo {
+    height: 140px;
   }
 }
 
@@ -1305,14 +1345,19 @@ p {
   position: relative;
   text-align: center;
   margin: 0 auto;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  -webkit-transform: translate(-50%, -49%);
+          transform: translate(-50%, -49%);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1800px) {
   .centerpic {
-    -webkit-transform: translate(-4%, -33%);
-            transform: translate(-4%, -33%);
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .centerpic {
+    width: 80vw;
   }
 }
 
@@ -1328,10 +1373,14 @@ p {
   max-width: 1600px;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-height: 800px) {
   .centerpic__img {
-    -webkit-transform: translateX(-50%) scale(0.8);
-            transform: translateX(-50%) scale(0.8);
+    position: static;
+    width: 80%;
+    -webkit-transform: none;
+            transform: none;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -1341,14 +1390,21 @@ p {
   text-align: center;
   font-family: 'Circe-Bold', Arial, sans-serif;
   margin: 0;
-  -webkit-transform: translateY(-46px);
-          transform: translateY(-46px);
+  -webkit-transform: translateY(3vw);
+          transform: translateY(3vw);
+}
+
+@media only screen and (max-width: 1400px) {
+  .centerpic__title {
+    -webkit-transform: translateY(5vw);
+            transform: translateY(5vw);
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   .centerpic__title {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(3vw);
+            transform: translateY(3vw);
   }
 }
 
@@ -1820,6 +1876,7 @@ p {
 @media only screen and (max-width: 1400px) {
   .carusel__dot,
   .video__dot {
+    position: static;
     padding: 4vw 40px;
   }
 }
@@ -1972,8 +2029,8 @@ p {
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  -webkit-transform: translateY(-130px);
-          transform: translateY(-130px);
+  -webkit-transform: translateY(-90px);
+          transform: translateY(-90px);
 }
 
 @media only screen and (max-width: 1600px) {
@@ -2014,10 +2071,14 @@ p {
   padding-bottom: 100%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1400px) {
   .carusel .slick-dots li:after,
   .video .slick-dots li:after {
-    padding-bottom: 84%;
+    padding-bottom: 0;
+  }
+  .carusel .slick-dots li:after:after,
+  .video .slick-dots li:after:after {
+    content: none;
   }
 }
 
@@ -2524,7 +2585,7 @@ yx-axis
   left: 0;
   right: 0;
   bottom: 0;
-  height: 130px;
+  height: 90px;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2919,8 +2980,8 @@ yx-axis
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
-  -webkit-transform: translateY(-130px);
-          transform: translateY(-130px);
+  -webkit-transform: translateY(-90px);
+          transform: translateY(-90px);
 }
 
 @media only screen and (max-width: 800px) {
@@ -3152,9 +3213,15 @@ yx-axis
   font-family: 'Circe-Bold', Arial, sans-serif;
 }
 
+@media only screen and (max-width: 1700px) {
+  .square__header .square__title {
+    font-size: 56px;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .square__header .square__title {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 
@@ -3194,12 +3261,13 @@ yx-axis
   vertical-align: top;
   margin-left: 20px;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 120px;
 }
 
 @media only screen and (max-width: 1400px) {
   .square__icon {
-    width: 35%;
+    max-width: 35%;
+    max-height: 90px;
   }
 }
 
